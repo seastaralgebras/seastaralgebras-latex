@@ -150,6 +150,16 @@
   enhanced jigsaw,colframe=\exexamplecolor,interior hidden,
   breakable,before skip=\exthmbefore,after skip=\exthmafter }
 
+  \tcolorboxenvironment{proper}{
+  enhanced jigsaw,colframe=\exdefncolor,interior hidden,
+  breakable,before skip=\exthmbefore,after skip=\exthmafter }
+  \tcolorboxenvironment{propern}{
+  enhanced jigsaw,colframe=\exdefncolor,interior hidden,
+  breakable,before skip=\exthmbefore,after skip=\exthmafter }
+  \tcolorboxenvironment{properu}{
+  enhanced jigsaw,colframe=\exdefncolor,interior hidden,
+  breakable,before skip=\exthmbefore,after skip=\exthmafter }
+
   \tcolorboxenvironment{proof}{% `proof' from `amsthm'
   blanker,breakable,left=5mm,
   before skip=\proofbefore,after skip=\proofafter,
@@ -297,59 +307,71 @@
 
 
 \newtheorem{thm}{Theorem}[section]
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{coro}[thm]{Corollary}
-
 \newtheorem*{thmu}{Theorem}
-\newtheorem*{lemu}{Lemma}
-\newtheorem*{corou}{Corollary}
-
 \newtheorem{manualthmn}{Theorem}
 \newenvironment{thmn}[1]{%
   \renewcommand\themanualthmn{#1}%
   \manualthmn
 }{\endmanualthmn}
 
+
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem*{lemu}{Lemma}
 \newtheorem{manuallemn}{Lemma}
 \newenvironment{lemn}[1]{%
   \renewcommand\themanuallemn{#1}%
   \manuallemn
 }{\endmanuallemn}
 
+\newtheorem{coro}[thm]{Corollary}
+\newtheorem*{corou}{Corollary}
 \newtheorem{manualcoron}{Corollary}
 \newenvironment{coron}[1]{%
   \renewcommand\themanualcoron{#1}%
   \manualcoron
 }{\endmanualcoron}
 
+\newtheorem{propo}[thm]{Proposition}
+\newtheorem*{propou}{Proposition}
+\newtheorem{manualpropon}{Proposition}
+\newenvironment{propon}[1]{%
+  \renewcommand\themanualpropon{#1}%
+  \manualpropon
+}{\endmanualpropon}
+
 \theoremstyle{definition}
 
 \newtheorem{defn}[thm]{Definition}
 \newtheorem*{defnu}{Definition}
-
-\newtheorem{example}[thm]{Example}
-\newtheorem*{exampleu}{Example}
-
 \newtheorem{manualdefnn}{Definition}
 \newenvironment{defnn}[1]{%
   \renewcommand\themanualdefnn{#1}%
   \manualdefnn
 }{\endmanualdefnn}
 
+\newtheorem{example}[thm]{Example}
+\newtheorem*{exampleu}{Example}
 \newtheorem{manualexamplen}{Example}
 \newenvironment{examplen}[1]{%
   \renewcommand\themanualexamplen{#1}%
   \manualexamplen
 }{\endmanualexamplen}
 
+\newtheorem{proper}[thm]{Properties}
+\newtheorem*{properu}{Properties}
+\newtheorem{manualpropern}{Properties}
+\newenvironment{propern}[1]{%
+  \renewcommand\themanualpropern{#1}%
+  \manualpropern
+}{\endmanualpropern}
+
+\newtheorem{exer}{Exercise}
+\newtheorem*{exeru}{Exercise}
 \newtheorem{manualexern}{Exercise}
 \newenvironment{exern}[1]{%
   \renewcommand\themanualexern{#1}%
   \manualexern
 }{\endmanualexern}
-
-\newtheorem{exer}{Exercise}
-\newtheorem*{exeru}{Exercise}
 
 
 \newenvironment{solution}[1][Solution]{\begin{proof}[#1]\let\qed\relax}{\end{proof}}

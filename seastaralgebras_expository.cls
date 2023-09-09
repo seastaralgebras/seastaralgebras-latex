@@ -30,6 +30,7 @@
 \RequirePackage[skins,theorems,breakable]{tcolorbox}
 \RequirePackage{lmodern}
 \RequirePackage{tabularx}
+\RequirePackage{hyperref}
 
 \RequirePackage{sectsty}
 

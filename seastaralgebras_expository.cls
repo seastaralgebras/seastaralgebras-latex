@@ -70,6 +70,16 @@
     colframe=gray,
     boxed title style={size=small,colback=white}
   }
+
+  \newtcolorbox{notebox}[1][Note:]{title={#1},enhanced,
+    coltitle=black,
+    % colback=white,
+    top=4mm,
+    attach boxed title to top left=
+    {yshift=-2mm,xshift=2mm},
+    colframe=\notecolor,
+    boxed title style={size=small,colback=white}
+  }
   \newcommand{\exdefncolor}{cyan!75!black}
   \newcommand{\exthmcolor}{black}
   \newcommand{\exexamplecolor}{red}
@@ -78,6 +88,7 @@
   \newcommand{\proofcolor}{gray}
   \newcommand{\proofbefore}{10pt}
   \newcommand{\proofafter}{15pt}
+  \newcommand{\notecolor}{green!75!black}
 
   \tcolorboxenvironment{exer}{
   enhanced jigsaw,colframe=\exthmcolor,interior hidden,
@@ -163,6 +174,8 @@
     colframe=gray,
     boxed title style={sharp corners, size=small,colback=white}
   }
+
+  \newenvironment{notebox}[1][Note:]{\vspace{10pt} \noindent \textbf{#1} }{\vspace{10pt}}
 \fi
 
 
@@ -342,6 +355,13 @@
 \newenvironment{solution}[1][Solution]{\begin{proof}[#1]\let\qed\relax}{\end{proof}}
 
 \renewcommand\qedsymbol{$\blacksquare$}
+
+
+
+% NOTE ENVIRONMENT
+
+
+\newenvironment{note}[1][Note:]{\begin{notebox}}{\end{notebox}}
 
 
 

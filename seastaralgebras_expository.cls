@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{seastaralgebras_expository}[2023/09/08 Seastaralgebras Expository Notes LaTeX class ]
+\ProvidesClass{seastaralgebras_expository}[2023/09/12 Seastaralgebras Expository Notes LaTeX class ]
 
 
 \newif\if@doublespaced \@doublespacedfalse % Default of single spaced documents.  To load the package setspace later, we introduce this conditional and have the option set the conditional to true.
@@ -17,22 +17,24 @@
 
 \LoadClass[11pt, letterpaper]{article}
 
-\RequirePackage[english]{babel}
-\RequirePackage[margin=1in]{geometry}
-\RequirePackage{mathtools}
-\RequirePackage{enumitem}
-\RequirePackage{framed}
-\RequirePackage{amsthm}
-\RequirePackage{thmtools}
-\RequirePackage{amssymb}
-\RequirePackage{fancyhdr}
-\RequirePackage{verbatim}
-\RequirePackage[skins,theorems,breakable]{tcolorbox}
-\RequirePackage{lmodern}
-\RequirePackage{tabularx}
-\RequirePackage{hyperref}
 
+\RequirePackage{fancyhdr}
+\RequirePackage[skins,theorems,breakable]{tcolorbox}
 \RequirePackage{sectsty}
+\RequirePackage{seastaralgebras}
+
+% \RequirePackage[english]{babel}
+% \RequirePackage[margin=1in]{geometry}
+% \RequirePackage{mathtools}
+% \RequirePackage{enumitem}
+% \RequirePackage{framed}
+% \RequirePackage{amsthm}
+% \RequirePackage{thmtools}
+% \RequirePackage{amssymb}
+% \RequirePackage{verbatim}
+% \RequirePackage{lmodern}
+% \RequirePackage{tabularx}
+% \RequirePackage{hyperref}
 
 
 

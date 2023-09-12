@@ -1,14 +1,19 @@
-\documentclass{seastaralgebras_hw}
+\documentclass[boxes,sansserif]{seastaralgebras_hw}
 \usepackage{seastaralgebras}
 % \usepackage[none]{hyphenat} % Use to avoid hyphens
 
-\yourname{Firstname Lastname} % Enter your name
-\assignmentnum{1} % Enter the assignment number
+
+
+\author{Firstname Lastname} % Enter your name
+\netid{abc123} % Enter your NetID or comment out
+\collaborators{Leonhard Euler, Bernard Bolzano} % Enter your collaborators or comment out
+\assignment{Assignment 1} % Enter the assignment name
 \date{\today} % Replace with due date
 \course{Course Name} % Enter the course name
-\sectionnum{1} % Enter your section number or comment out
+\semester{Fall 2021} % Enter the semester
+\sectionnum{123} % Enter your section number
 \instructor{Professor Name} % Enter your professor's name
-\institution{Your University} % Enter your university
+\institution{Rutgers University} % Enter your university
 
 \begin{document}
 
@@ -17,11 +22,66 @@
 % You can comment out code by using the percentage symbol
 
 
-\begin{exercise}{ExNum}
-Exercise text here
-\end{exercise}
-\begin{solution}
-Your answer here
+\begin{exern}{1.2.3} % This is a manually numbered exercise.
+  Exercise text
+\end{exern}
+\begin{solution} % This is a solution environment.
+  Your answer here.
 \end{solution}
+
+\begin{exer} % This is an automatically numbered exercise.
+  Exercise text
+\end{exer}
+\begin{proof} % This is a proof environment.
+  Your proof here. \par
+
+  You may want to write an induction proof. You can use the induction commands as follows:
+  \begin{induction}
+    \begin{basecase}
+      This is your base case.
+    \end{basecase}
+    \begin{indhyp}
+      This is your induction hypothesis.
+    \end{indhyp}
+    \begin{indstep}
+      This is your induction step.
+    \end{indstep}
+    Thus by the principle of mathematical induction, we have proven our theorem.
+  \end{induction}
+\end{proof}
+
+\begin{exeru} % This is an exercise that is not numbered.
+  Exercise text
+\end{exeru}
+\begin{solution} % This is a proof environment.
+  Your solution here.
+\end{solution}
+
+\begin{thm} % This is an automatically numbered theorem. For a theorem that isn't numbered, use thmu instead; for a manually numbered theorem, use thmn and add number in a set of curly braces.
+  This is a theorem.
+\end{thm}
+\begin{proof} % This is a proof environment.
+  Your proof here.
+\end{proof}
+
+\begin{lem} % This is an automatically numbered lemma. For a lemma that isn't numbered, use lemu instead; for a manually numbered lemma, use lemn and add number in a set of curly braces.
+  This is a lemma.
+\end{lem}
+\begin{proof} % This is a proof environment.
+  Your proof here.
+\end{proof}
+
+\begin{coro} % This is an automatically numbered corollary. For a corollary that isn't numbered, use corou instead; for a manually numbered corollary, use coron and add number in a set of curly braces.
+  This is a corollary.
+\end{coro}
+\begin{proof} % This is a proof environment.
+  Your proof here.
+\end{proof}
+
+\begin{defn} % This is an automatically numbered definition. For a definition that isn't numbered, use defnu instead; for a manually numbered definition, use defnn and add number in a set of curly braces.
+  This is a definition.
+\end{defn}
+
+
 
 \end{document}
